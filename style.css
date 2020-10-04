@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-
 :root {
   --primary-color: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
   --pale-blue: hsl(243, 100%, 93%);
@@ -7,7 +6,6 @@
   --dark-blue: hsl(228, 56%, 26%);
   --darker-blue: hsl(229, 57%, 11%);
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -67,7 +65,7 @@ body {
   border-radius: 10px;
   margin-right: 15px;
 }
-/* Progress Bar Section */
+/* Main, Progress Bar Section */
 .p-bar-banner p {
   font-size: 40px;
   font-weight: 700;
@@ -151,6 +149,7 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+/* Mobile */
 @media (max-width: 375px) {
   body {
     background: url('./images/bg-mobile.png') no-repeat center center/cover;
@@ -173,7 +172,6 @@ body {
   .buttons {
     margin-top: 35px;
   }
-
   .icons {
     flex: 0 0 auto;
     height: 220px;
@@ -185,8 +183,6 @@ body {
     text-align: center;
   }
   .progress-bar .p-bar-banner {
-    /* position: static; */
-    /* display: flex; */
     top: 20px;
     left: 0;
     width: 73%;
