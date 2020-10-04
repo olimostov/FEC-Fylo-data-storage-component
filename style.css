@@ -20,6 +20,9 @@ body {
   background-color: var(--darker-blue);
   color: var(--pale-blue);
 }
+.clr {
+  clear: both;
+}
 /* Main, Icons Section */
 .main {
   display: flex;
@@ -49,7 +52,6 @@ body {
 }
 .progress-bar {
   background: var(--dark-blue);
-  /* width: 400px; */
   flex: 2 0 500px;
   height: 150px;
   border-radius: 10px;
@@ -107,7 +109,6 @@ body {
   text-transform: uppercase;
 }
 .progress-bar .the-bar {
-  /* background: var(--darker-blue); */
   background: hsla(229, 57%, 11%, 0.5);
   border-radius: 10px;
   height: 20px;
@@ -149,4 +150,53 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media (max-width: 375px) {
+  body {
+    background: url('./images/bg-mobile.png') no-repeat center center/cover;
+  }
+  .main {
+    display: block;
+    margin: 120px auto;
+    width: 85%;
+    height: 100%;
+  }
+  .main-flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .box {
+    width: 100%;
+    padding: 45px;
+  }
+  .buttons {
+    margin-top: 35px;
+  }
+
+  .icons {
+    flex: 0 0 auto;
+    height: 220px;
+  }
+  .progress-bar {
+    flex: 0 0 auto;
+    height: 170px;
+    padding: 35px;
+    text-align: center;
+  }
+  .progress-bar .p-bar-banner {
+    /* position: static; */
+    /* display: flex; */
+    top: 20px;
+    left: 0;
+    width: 73%;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  .progress-bar .banner-corner {
+    display: none;
+  }
+  .progress-bar .the-progress .the-toggle {
+    left: 173px;
+  }
 }
